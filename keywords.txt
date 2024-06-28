@@ -1,0 +1,20 @@
+#######################################
+# Syntax Coloring Map For ESPWiFiManager
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+ESPWiFiManager	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+handleClient	KEYWORD2
+connectToWiFi	KEYWORD2
+startAPMode	KEYWORD2
+handleRoot	KEYWORD2
+handleRootPost	KEYWORD2
+loadStringsFromEEPROM	KEYWORD2
+saveStringToEEPROM	KEYWORD2
