@@ -98,7 +98,7 @@ void ESPWiFiManager::handleRoot() {
   html += "<title>WiFi Scan</title>";
   html += "<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');";
   html += "body { font-family: 'Roboto', sans-serif; font-size: 16px; text-align: left; padding: 2em; background-color: #121212; color: #ffffff; }";
-  html += "input[type=text], select { width: 80%; padding: 0.5em; margin-top: 0.5em; border: 1px solid #444; border-radius: 5px; background-color: #1e1e1e; color: #ffffff; }";
+  html += "input[type=text], input[type=password], select { width: 80%; padding: 0.5em; margin-top: 0.5em; border: 1px solid #444; border-radius: 5px; background-color: #1e1e1e; color: #ffffff; }";
   html += "input[type=submit] { padding: 0.5em 1em; margin-top: 0.5em; border: none; border-radius: 5px; background-color: #2980b9; color: white; cursor: pointer; }";
   html += "select { width: 80%; padding: 0.5em; margin-top: 0.5em; border: 1px solid #444; border-radius: 5px; background-color: #1e1e1e; color: #ffffff; }</style></head><body>";
   html += "<h1>Select WiFi Networks</h1><form method='POST'><ul>";
@@ -117,7 +117,7 @@ void ESPWiFiManager::handleRoot() {
   }
 
   html += "</select>";
-  html += "<input type='text' name='primary_password' placeholder='Enter Primary WiFi Password'></li>";
+  html += "<input type='password' name='primary_password' placeholder='Enter Primary WiFi Password'></li>";
 
   html += "<li>Secondary Network:<br>";
   html += "<select name='secondary_ssid'>";
@@ -131,7 +131,7 @@ void ESPWiFiManager::handleRoot() {
   }
 
   html += "</select>";
-  html += "<input type='text' name='secondary_password' placeholder='Enter Secondary WiFi Password'></li>";
+  html += "<input type='password' name='secondary_password' placeholder='Enter Secondary WiFi Password'></li>";
 
   html += "</ul>";
   html += "<input type='submit' value='Save'></form>";
@@ -158,7 +158,7 @@ void ESPWiFiManager::handleRootPost() {
   html += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
   html += "<title>Rebooting...</title>";
   html += "<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');";
-  html += "body { font-family: 'Roboto', sans-serif; font-size: 16px; text-align: center; padding: 2em; }";
+  html += "body { font-family: 'Roboto', sans-serif; font-size: 16px; text-align: center; padding: 2em; background-color: #121212; color: #ffffff; }";
   html += "</style></head><body>";
   html += "<h1>Credentials Saved</h1>";
   html += "<p>Rebooting in <span id='countdown'>5</span> seconds...</p>";
